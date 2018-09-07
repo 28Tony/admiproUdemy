@@ -5,8 +5,13 @@ import { Graficas1Component } from "./graficas1/graficas1.component";
 import { PagesComponent } from "./pages.component";
 //Modulos importados
 import { SharedModule } from "../shared/shared.modulo";
+import {FormsModule} from '@angular/forms';
+import { ChartsModule } from 'ng2-charts';
 //Rutas importadas
 import { PAGES_ROUTING } from "./pages.routes";
+//Temporal
+import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
+import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
 
 @NgModule({
 
@@ -14,17 +19,23 @@ import { PAGES_ROUTING } from "./pages.routes";
         DashboardComponent,
         ProgressComponent,
         Graficas1Component,
-        PagesComponent
+        PagesComponent,
+        IncrementadorComponent,
+        GraficoDonaComponent
     ],
     imports:[
         SharedModule,
-        PAGES_ROUTING
+        PAGES_ROUTING,
+        FormsModule,
+        ChartsModule
     ],
     exports: [
         DashboardComponent,
         ProgressComponent,
         Graficas1Component,
-        PagesComponent 
+        PagesComponent,
+        IncrementadorComponent,
+        GraficoDonaComponent 
     ]
 })
 
