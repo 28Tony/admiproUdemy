@@ -13,6 +13,8 @@ import { PagesModule } from './pages/pages.modulo';
 import { FormsModule } from '@angular/forms';
 
 
+//Servicios
+import { ServiceModule } from './services/service.module';
 
 
 @NgModule({
@@ -26,7 +28,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     APP_ROUTING,
     PagesModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
