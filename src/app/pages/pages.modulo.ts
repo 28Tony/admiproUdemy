@@ -3,6 +3,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
 import { Graficas1Component } from "./graficas1/graficas1.component";
 import { PagesComponent } from "./pages.component";
+import { PromesasComponent } from "./promesas/promesas.component";
+import { RxjsComponent } from "./rxjs/rxjs.component";
 //Modulos importados
 import { SharedModule } from "../shared/shared.modulo";
 import {FormsModule} from '@angular/forms';
@@ -14,6 +16,8 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
 import { AcountSettingsComponent } from './acount-settings/acount-settings.component';
 
+
+
 @NgModule({
 
     declarations:[
@@ -23,7 +27,9 @@ import { AcountSettingsComponent } from './acount-settings/acount-settings.compo
         PagesComponent,
         IncrementadorComponent,
         GraficoDonaComponent,
-        AcountSettingsComponent
+        AcountSettingsComponent,
+        PromesasComponent,
+        RxjsComponent
     ],
     imports:[
         SharedModule,
