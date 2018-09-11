@@ -7,6 +7,7 @@ import { AcountSettingsComponent } from './acount-settings/acount-settings.compo
 import { PromesasComponent } from "./promesas/promesas.component";
 import { RxjsComponent } from "./rxjs/rxjs.component";
 import { LoginGuardGuard } from '../services/service.index';
+import { ProfileComponent } from './profile/profile.component';
 
 
 const pagesRoute:Routes =[
@@ -20,6 +21,7 @@ const pagesRoute:Routes =[
         {path:'rxjs', component: RxjsComponent,data: { titulo:'Rxjs'}},
         {path:'progress', component: ProgressComponent,data: { titulo:'Progress'}},
         {path:'acount-settings', component: AcountSettingsComponent,data: { titulo:'Ajustes del tema'}},
+        {path:'profile', component: ProfileComponent,data: { titulo:'Perfil de usuairio'}},
         {path:'', pathMatch:'full', redirectTo: '/dashboard'} 
     ]}
 ]

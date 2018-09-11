@@ -16,6 +16,11 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
 import { AcountSettingsComponent } from './acount-settings/acount-settings.component';
 
+//Pipe
+import { PipesModule } from '../pipes/pipes.module';
+import { ProfileComponent } from "./profile/profile.component";
+import { CommonModule } from "@angular/common";
+
 
 
 @NgModule({
@@ -29,13 +34,16 @@ import { AcountSettingsComponent } from './acount-settings/acount-settings.compo
         GraficoDonaComponent,
         AcountSettingsComponent,
         PromesasComponent,
-        RxjsComponent
+        RxjsComponent,
+        ProfileComponent
     ],
     imports:[
         SharedModule,
         PAGES_ROUTING,
         FormsModule,
-        ChartsModule
+        ChartsModule,
+        PipesModule,
+        CommonModule
     ],
     exports: [
         DashboardComponent,
