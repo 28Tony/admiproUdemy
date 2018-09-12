@@ -3,7 +3,7 @@
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Perfil del usuario</h4>
-                <h6 class="card-subtitle">Poner algo aqui</h6>
+                <h6 class="card-subtitle">MORTAL KOMBAT</h6>
                 <form ngNativeValidate #f="ngForm" (ngSubmit)="guardar( f.value)" class="form p-t-20">
                     <div class="form-group">
                         <label for="exampleInputuname">Nombre del usuario</label>
@@ -35,10 +35,13 @@
         <div class="card">
             <div class="card-body" align="center">
                 <h4 class="card-title">Fotografia del usuario</h4>
-                <h6 class="card-subtitle">Poner algo aqui</h6>
+                <h6 class="card-subtitle">MK</h6>
+
 
                 <img *ngIf="!imagenTermporal" [src]="usuario.img | imagen" class="w150">
+                <br>
                 <img *ngIf="imagenTermporal" [src]="imagenTermporal" class="w150">
+                <br>
                 <input (change)="seleccionImagen( $event.target.files[0] )" type="file" name="" id="">
                 <br>
                 <br>

@@ -21,14 +21,12 @@ import { ServiceModule } from './services/service.module';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent
-    
- 
-
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,7 @@ import { PromesasComponent } from "./promesas/promesas.component";
 import { RxjsComponent } from "./rxjs/rxjs.component";
 import { LoginGuardGuard } from '../services/service.index';
 import { ProfileComponent } from './profile/profile.component';
+import { UsuariosComponent } from "./usuarios/usuarios.component";
 
 
 const pagesRoute:Routes =[
@@ -22,6 +23,9 @@ const pagesRoute:Routes =[
         {path:'progress', component: ProgressComponent,data: { titulo:'Progress'}},
         {path:'acount-settings', component: AcountSettingsComponent,data: { titulo:'Ajustes del tema'}},
         {path:'profile', component: ProfileComponent,data: { titulo:'Perfil de usuairio'}},
+
+        //Mantenimientos
+        {path:'usuarios', component: UsuariosComponent,data: { titulo:'Mantenimiento de usuarios'}},
         {path:'', pathMatch:'full', redirectTo: '/dashboard'} 
     ]}
 ]
