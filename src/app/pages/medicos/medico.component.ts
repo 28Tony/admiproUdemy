@@ -15,7 +15,8 @@ import { ModalUploadService } from '../../components/modal-upload/modal-upload.s
 export class MedicoComponent implements OnInit {
 
   hospitales:Hospital[]=[];
-  medico:Medico= new Medico('','','','','');
+ // medico:Medico= new Medico('','','','','');
+  medico:Medico= new Medico();
   hospital:Hospital= new Hospital('');
   constructor(public _servicioMedicos: MedicoService,
               public _servicioHospital: HospitalService,
@@ -47,9 +48,14 @@ export class MedicoComponent implements OnInit {
   this._servicioMedicos.cargarMedico(id)
     .subscribe(medico=>{
      // let nuevoMedico = new Medico();
+     /*
       this.medico = medico;
       this.medico.hospital = medico.hospital._id;
       this.cambioHospital(this.medico.hospital);
+      */
+     this.medico = medico.medico;
+     this.medico.hospital = medico.hospital;
+     this.cambioHospital(this.medico.hospital);
     });
   }
 

@@ -29,8 +29,8 @@ export class MedicoService {
     let url = URL_SERVICIOS + 'medico/' + id;
     return this.http.get(url)
     
-      .map((respuesta:any)=> respuesta.medico);
-
+     // .map((respuesta:any)=> respuesta.medico);
+     .map((respuesta:any)=> respuesta);
   }
 
   buscarMedicos(termino:string){
@@ -56,7 +56,7 @@ export class MedicoService {
     guardarMedico(medico:Medico){
       let url = URL_SERVICIOS +'medico';
 //actualizar
-
+console.log("nbugslihfo");
       if (medico._id){
         console.log('Se encontró medico');
         url+='/'+medico._id;
